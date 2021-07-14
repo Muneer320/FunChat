@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunChat</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCtt5n2RtL-CIMCWgSflmnn7GU869Mo2JU",
+            authDomain: "chatwebapp-498e6.firebaseapp.com",
+            projectId: "chatwebapp-498e6",
+            storageBucket: "chatwebapp-498e6.appspot.com",
+            messagingSenderId: "769899862724",
+            appId: "1:769899862724:web:168a37ef0508d061f28791"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body>
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i> FunChat
+            </div>
+            <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+        </header>
+
+        <main class="msger-chat">
+            <div class="msg left-msg">
+                <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)">
+                </div>
+
+                <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">Bot</div>
+                        <div class="msg-info-time">8:48</div>
+                    </div>
+
+                    <div class="msg-text">Welcome to FunChat!</div>
+                </div>
+            </div>
+
+            <div class="msg left-msg">
+                <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)">
+                </div>
+
+                <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">Bot</div>
+                        <div class="msg-info-time">8:48</div>
+                    </div>
+
+                    <div class="msg-text">Please enter your name</div>
+                </div>
+            </div>
+        </main>
+
+        <form class="msger-inputarea">
+            <input type="text" class="msger-input" id="message" placeholder="Enter your message..." autocomplete="off">
+            <button class="name-send-btn" onclick="done()">Send</button>
+        </form>
+    </section>
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
